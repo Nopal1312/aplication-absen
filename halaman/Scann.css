@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+ background:url();
+ background-size:cover ;
+ background-position: center;
+ min-height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.card{
+    position: relative;
+    width: 500px ;
+    height:300px ;
+    /* background: rgba(red, green, blue, alpha); */
+    background-image: url('iniapayah.jpg');
+    backdrop-filter: blur(10px) ; 
+    box-shadow: 0 25px 25px rgba(red, green, blue, alpha) ;
+    border-radius: 20px;
+    overflow: hidden;
+    border-top: 1px solid rgba(red, green, blue, alpha);
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover{
+    transform: scale(1.2);
+    background: rgba(red, green, blue, alpha); 
+}
+
+.card::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #772977;
+}
+
+.card.content{
+    position: relative;
+    display: flex;
+    margin-top: -80px;
+}
+
+.card.content.imgbox{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow:none;
+}
